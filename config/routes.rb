@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   
   get '/experiences' => 'experiences#index'
   get '/experiences/new'=> 'experiences#new'
@@ -16,8 +15,6 @@ Rails.application.routes.draw do
   get '/educations/:id/edit' => 'educations#edit'
   patch '/educations/:id' => 'educations#update'
   destroy '/educations/:id' => 'educations#destroy'
-
-=======
 
   get '/skills' => 'skills#index'
   post '/skills' => 'skills#create'
@@ -42,5 +39,4 @@ Rails.application.routes.draw do
 
   delete '/students/:id' => 'students#destroy'
 
->>>>>>> 4db20ad58d0ee266f30e05145dff9f19662d95f2
 end
