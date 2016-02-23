@@ -5,7 +5,10 @@ class SkillsController < ApplicationController
   end
 
   def create
-    @skill = Skill.create(skill_name: params[:skill_name])
+    @skill = Skill.create(
+      skill_name: params[:skill_name],
+      student_id: params[:student_id]
+        )
 
     render :show
   end
@@ -16,7 +19,9 @@ class SkillsController < ApplicationController
 
   def update
     @skill = Skill.find(params[:id])
-    @skill.update(skill_name: params[:skill_name])
+    @skill.update(
+      skill_name: params[:skill_name],
+      student_id: params[:student_id])
 
     render :show
   end

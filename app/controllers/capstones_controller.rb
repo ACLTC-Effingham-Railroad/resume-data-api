@@ -9,7 +9,9 @@ class CapstonesController < ApplicationController
       name: params[:name],
       description: params[:description],
       url: params[:url],
-      screenshot: params[:screenshot])
+      screenshot: params[:screenshot],
+      student_id: params[:student_id]
+      )
 
     render :show
   end
@@ -24,7 +26,9 @@ class CapstonesController < ApplicationController
       name: params[:name],
       description: params[:description],
       url: params[:url],
-      screenshot: params[:screenshot])
+      screenshot: params[:screenshot],
+      student_id: params[:student_id]
+      )
     
     render :show
   end
