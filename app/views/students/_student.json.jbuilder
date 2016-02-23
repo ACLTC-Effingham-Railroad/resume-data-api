@@ -5,13 +5,46 @@ json.email student.email
 json.phone_number student.phone_number
 json.short_bio student.short_bio
 json.linkedin_url student.linkedin_url
+<<<<<<< HEAD
 json.twitter_handle student.twitter_handle
+=======
+json.twiter_handle student.twiter_handle
+>>>>>>> ff77326c5fb43346adc10ff86c230c0c5e2a77bc
 json.blog_url student.blog_url
 json.github_url student.github_url
 json.photo student.photo
 json.online_resume_url student.online_resume_url
 
+<<<<<<< HEAD
 json.educations student.educations.each do |education|
+=======
+# json.array! students.each do |student|
+# 	json.id student.id
+# 	json.first_name student.first_name
+# 	json.last_name student.last_name
+# 	json.email student.email
+# 	json.phone_number student.phone_number
+# 	json.short_bio student.short_bio
+# 	json.linkedin_url student.linkedin_url
+# 	json.twiter_handle student.twiter_handle
+# 	json.blog_url student.blog_url
+# 	json.github_url student.github_url
+# 	json.photo student.photo
+# 	json.online_resume_url student.online_resume_url
+# end
+
+json.educations student.educations.each do |education|
+	json.start_date education.start_date
+	json.end_date education.end_date
+	json.degree education.degree
+	json.university_name education.university_name
+	json.details education.details
+	json.student_id education.student_id
+end
+
+
+json.array! student.educations.each do |education|
+>>>>>>> ff77326c5fb43346adc10ff86c230c0c5e2a77bc
 	json.start_date education.start_date
 	json.end_date education.end_date
 	json.degree education.degree
