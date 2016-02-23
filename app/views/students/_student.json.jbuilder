@@ -5,19 +5,19 @@ json.email student.email
 json.phone_number student.phone_number
 json.short_bio student.short_bio
 json.linkedin_url student.linkedin_url
-json.twiiter_handle student.twiiter_handle
+json.twitter_handle student.twitter_handle
 json.blog_url student.blog_url
 json.github_url student.github_url
 json.photo student.photo
 json.online_resume_url student.online_resume_url
 
-json.array! student.educations.each do |education|
+json.educations student.educations.each do |education|
 	json.start_date education.start_date
 	json.end_date education.end_date
 	json.degree education.degree
 	json.university_name education.university_name
 	json.details education.details
-	json.student_id education.student_idexit
+	json.student_id education.student_id
 end
 
 json.array! student.capstones.each do |capstone|
@@ -33,7 +33,7 @@ json.array! student.experiences.each do |experience|
 	json.end_date experience.end_date
 	json.job_title experience.job_title
 	json.company_name experience.company_name
-	json.details capstones.details
+	json.details experience.details
 	json.student_id
 end
 
