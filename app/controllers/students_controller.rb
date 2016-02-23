@@ -11,8 +11,7 @@ class StudentsController < ApplicationController
 	end
 
 	def create
-		@student = Student.find(params[:id])
-		@student.new(
+		@student = Student.create(
 				first_name: params[:first_name], 
 				last_name: params[:last_name], 
 				email: params[:email], 
@@ -24,11 +23,7 @@ class StudentsController < ApplicationController
 				github_url: params[:github_url], 
 				photo: params[:photo] 
 				)
-		if @student.save
-			redirect_to '/students'
-		else
-			render :new
-		end
+		render :show
 	end
 
 	def edit
