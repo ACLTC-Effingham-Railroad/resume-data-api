@@ -16,6 +16,8 @@ class ExperiencesController < ApplicationController
                       student_id: params[:student_id]
                       })
 
+    render :show
+
   end
 
   def show
@@ -37,10 +39,13 @@ class ExperiencesController < ApplicationController
                       details: params[:details],
                       student_id: params[:student_id]
                       })
+    render :show
   end
 
   def destroy 
     @experience = Experience.find_by(id: params[:id])
     @experience.destroy 
+
+    render :nothing
   end
 end
