@@ -1,6 +1,6 @@
 class Student < ActiveRecord::Base
-	has_many :experience
-	has_many :education
+	has_many :experiences
+	has_many :educations
 	has_many :skills
-	has_many :capstone
+	has_many :capstones
 end
