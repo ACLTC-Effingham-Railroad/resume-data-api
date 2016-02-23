@@ -29,9 +29,10 @@ Rails.application.routes.draw do
   delete '/capstones/:id' => 'capstones#destroy'
 
   get '/students' => 'students#index'
-  get '/students/:id/new' => 'students#new'
-  post '/students' => 'students#create'
   
+  get '/students/new' => 'students#new'
+  post '/students' => 'students#create'
+
   get '/students/:id' => 'students#show'
 
   get '/students/:id/edit' => 'students#edit'
