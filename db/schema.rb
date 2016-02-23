@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20160219025718) do
     t.text     "details",         limit: 65535
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
-    t.integer  "student_id",      limit: 4
   end
 
   create_table "experiences", force: :cascade do |t|
