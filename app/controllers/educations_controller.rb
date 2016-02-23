@@ -21,7 +21,7 @@ class EducationsController < ApplicationController
                 student_id: params[:student_id]
                 )
             render :show
-        end
+
     end
 
     def edit

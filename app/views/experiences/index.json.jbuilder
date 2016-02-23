@@ -1,8 +1,5 @@
-<h1>Experiences#index</h1>
-<p>Find me in app/views/experiences/index.html.erb</p>
-
 json.array! @experiences.each do |experience|
-    json.id experiences.id
+    json.id experience.id
     json.start_date experience.start_date
     json.end_date experience.start_date
     json.job_title experience.job_title

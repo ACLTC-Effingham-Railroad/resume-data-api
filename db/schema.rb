@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219025718) do
+ActiveRecord::Schema.define(version: 20160223032210) do
 
   create_table "capstones", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160219025718) do
     t.text     "details",         limit: 65535
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
+    t.integer  "student_id",      limit: 4
   end
 
   create_table "experiences", force: :cascade do |t|
